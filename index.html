@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apartamento moderno na Praia de Copacabana</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-top container">
+      <div class="logo">
+        <img src="imagens/logo.jpg" alt="Logo Airbnb">
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Hospedagem</a></li>
+          <li><a href="#">Experiências</a></li>
+          <li><a href="#">Online Experiences</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <button class="login-btn">Entrar</button>
+        <button class="signup-btn">Cadastrar</button>
+      </div>
+    </div>
+    <div class="header-title container">
+      <h1>Apartamento moderno na Praia de Copacabana</h1>
+      <p class="price">R$ 1020 / noite</p>
+    </div>
+  </header>
+
+  <!-- GALERIA -->
+  <section class="galeria-section container">
+    <img src="imagens/foto1.jpg" alt="Sala de estar" class="galeria-img">
+    <img src="imagens/foto2.jpg" alt="Cozinha moderna" class="galeria-img">
+    <img src="imagens/foto3.jpg" alt="Quarto casal" class="galeria-img">
+    <img src="imagens/foto4.jpg" alt="Sala e mesa de jantar" class="galeria-img">
+    <img src="imagens/foto5.jpg" alt="Varanda vista mar" class="galeria-img">
+  </section>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="container main-content">
+
+    <!-- LEFT -->
+    <div class="left-column">
+      <section class="card descricao">
+        <h2>Descrição</h2>
+        <p>Desfrute de uma estadia inesquecível em um apartamento moderno e aconchegante, localizado a apenas 200 metros da areia de Copacabana. Ideal para casais ou famílias que desejam conforto, praticidade e uma vista espetacular do mar.</p>
+      </section>
+
+      <section class="card acomodacao">
+        <h2>Tipo de acomodação</h2>
+        <ul>
+          <li>Espaço inteiro: apartamento</li>
+          <li>4 hóspedes</li>
+          <li>2 quartos</li>
+          <li>2 camas (1 casal + 1 solteiro)</li>
+          <li>1 banheiro</li>
+        </ul>
+      </section>
+
+      <section class="card comodidades">
+        <h2>Comodidades</h2>
+        <ul>
+          <li>Wi-Fi de alta velocidade</li>
+          <li>Ar-condicionado em todos os cômodos</li>
+          <li>Cozinha equipada (fogão, geladeira, micro-ondas, cafeteira)</li>
+          <li>TV Smart com streaming</li>
+          <li>Máquina de lavar</li>
+          <li>Vista para o mar</li>
+          <li>Portaria 24h</li>
+          <li>Elevador</li>
+        </ul>
+      </section>
+
+      <section class="card regras">
+        <h2>Regras da casa</h2>
+        <ul>
+          <li>Check-in a partir das 14h</li>
+          <li>Check-out até 11h</li>
+          <li>Não fumar dentro do apartamento</li>
+          <li>Não são permitidas festas</li>
+          <li>Animais de estimação não são aceitos</li>
+        </ul>
+      </section>
+
+      <section class="card avaliacoes">
+        <h2>Avaliações</h2>
+        <article>
+          <h3>Fernanda (São Paulo) ⭐⭐⭐⭐⭐</h3>
+          <blockquote>“Apartamento impecável, limpo e com uma vista maravilhosa. O anfitrião foi super atencioso. Recomendo muito para quem quer curtir o Rio com conforto.”</blockquote>
+        </article>
+        <article>
+          <h3>Javier (Argentina) ⭐⭐⭐⭐</h3>
+          <blockquote>“Ótima localização, perto da praia e restaurantes. Só senti falta de mais utensílios na cozinha, mas no geral a estadia foi excelente.”</blockquote>
+        </article>
+      </section>
+    </div>
+
+    <!-- RIGHT -->
+    <aside class="right-column card">
+      <h2>Reserve sua estadia</h2>
+      <form id="reserva-form">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" placeholder="Seu nome" required>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="seuemail@exemplo.com" required>
+        <label for="checkin">Check-in</label>
+        <input type="date" id="checkin" required>
+        <label for="checkout">Check-out</label>
+        <input type="date" id="checkout" required>
+        <button type="submit">Reservar</button>
+      </form>
+      <p id="reserva-msg"></p>
+    </aside>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Airbnb Clone - Trabalho CP1 | Feito por VICTOR E JOAO GUIDA</p>
+  </footer>
+
+  <!-- MODAL GALERIA -->
+  <div id="modal" class="modal">
+    <span class="modal-close">&times;</span>
+    <img class="modal-content" id="modal-img">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
